@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Order{% endblock %}
+
+{% block content %}
+<h2>Order</h2>
+<table class="table table-hover">
+  {% if orders %}
+    {% for order in orders %}
+        <tr>
+          <td>{{order.id}}</td>
+          <td>{{order.food}}</td>
+          <td>
+            {% for ingredient in order.ingredients.all %}
+              {{ ingredient }},
+            {% endfor %}
+          </td>
+          <td>{{order.client}}</td>
+          <td>{{order.worker}}</td>
+          <td>{{ order.get_price }}</td>
+          <td>{{order.order_date_time}}</td>
+        </tr>
+    {% endfor %}
+  {% endif %}
+  </table>
+{% endblock content %}

@@ -1,0 +1,50 @@
+body {
+    background: grey;
+}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    border-right: 5px solid #4d4d4d;
+    color: white;
+}
+
+aside span {
+    font-family: Georgia, serif;
+    font-size: 30px;
+}
+
+aside ul {
+    margin-top: 30px;
+    list-style: none;
+}
+
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .5s ease;
+}
+
+aside ul li:hover, ul a:hover{
+    color: red;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+main .t1 {
+    float: left;
+    margin-top: 50px;
+    text-align: center;
+    width: 75%;
+    color: #fff;
+    margin-left: 3%;
+}
+
+main h2 {
+    font-family: Georgia, serif;
+    font-size: 60px;
+}
